@@ -27,6 +27,7 @@ body {
 }
 
 #counter {
+  margin-top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,16 +36,17 @@ body {
 }
 
 #counter h1 {
+  margin: 1rem auto;
   color: gray;
-  font-size: 72px;
+  font-size: 10rem;
 }
 
 #counter button {
-  padding: 2em 4em;
+  padding: 1rem 2rem;
   background-color: #59a9c2;
   color: white;
   border: none;
-  font-size: 1em;
+  font-size: 5rem;
   transition: all 1s ease;
   outline: none;
 }
