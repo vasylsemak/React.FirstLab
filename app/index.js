@@ -1,8 +1,8 @@
 // Your code here!
-import React from "react";
+import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
-class Counter extends React.Component {
+class Counter extends Component {
   constructor() {
     super()
     this.state = { count: 0 };
@@ -12,11 +12,11 @@ class Counter extends React.Component {
   }
 
   increment() {
-    this.setState({ count: this.state.count + 1 });
+    this.setState(state => ({ count: state.count +1 }));
   }
 
   decrement() {
-    this.setState({ count: this.state.count - 1 });
+    this.setState(state => ({ count: state.count -1 }));
   }
 
   render() {
